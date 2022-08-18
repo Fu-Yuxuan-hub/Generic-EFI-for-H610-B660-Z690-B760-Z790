@@ -107,8 +107,7 @@ After installing macOS Big Sur 11.3 and later, disable config-Kernel-Quirks-Xhci
 如果您遇到相关的ACPI错误，请启用*将MC__更改为MCHC，*并可能将*ADBG更改为XDBG*
 
 If you get ACPI Errors,please enable change *MC__ to MCHC*
-
-- 
+ 
 
 ## End / 结语
 This EFI supports `macOS Catalina`,`macOS Big Sur`,`macOS Monterey` and `macOS Ventura Beta`       
