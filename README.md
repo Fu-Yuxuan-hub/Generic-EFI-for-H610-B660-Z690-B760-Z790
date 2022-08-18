@@ -24,6 +24,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 - `Configuration.pdf` and `Differences.pdf` in each OpenCore releases.
 - [daliansky/OC-little](https://github.com/daliansky/OC-little)
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
+- [修复Gigabyte Z690板上的睡眠唤醒问题](https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/page-132)
 
 **务必阅读上述参考资料**
 
@@ -101,7 +102,13 @@ Please customize the USB Port before installing MacOS Big Sur 11.3 or later.
 
 在安装完 macOS Big Sur 11.3以及更新版本后，请禁用config-Kernel-Quirks-XhciPortLimit 。
 
-After installing macOS Big Sur 11.3 and later, disable config-Kernel-Quirks-XhciPortLimit .
+After installing macOS Big Sur 11.3 and later, disable config-Kernel-Quirks-XhciPortLimit .           
+
+如果您遇到相关的ACPI错误，请启用*将MC__更改为MCHC，*并可能将*ADBG更改为XDBG*
+
+If you get ACPI Errors,please enable change *MC__ to MCHC*
+
+- 
 
 ## End / 结语
 This EFI supports `macOS Catalina`,`macOS Big Sur`,`macOS Monterey` and `macOS Ventura Beta`       
