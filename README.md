@@ -1,5 +1,5 @@
-<h1 align="center">General-EFI-for-600-Series</h1>
-<h3 align="center">600系主板通用EFI配置文件</h3>
+<h1 align="center">General-EFI-for-600/700-Series</h1>
+<h3 align="center">600/700系主板通用EFI配置文件</h3>
 <br>
 
 ## 概览 / Overview
