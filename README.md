@@ -14,38 +14,21 @@ Template for Quick installation of Hackintosh
 
 Your warranty is now void. Please do some research if you have any concerns before utilizing my project. I am not responsible for any loss, including but not limited to Kernel Panic, device fail to boot or can not function normally, storage damage or data loss, atomic bombing, World War III, The CK-Class Restructuring Scenario that SCP Foundation can not prevent, and so on.
 
-## 必读参考资料 / Refrence
+## 安装前 / Before Installation 
+
+### 阅读以下资料 / Read the following reference
 
 - [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-- [dortania's OpenCore Post Install Guide](https://dortania.github.io/OpenCore-Post-Install/)
 - [dortania Getting Started with ACPI](https://dortania.github.io/OpenCore-Post-Install/)
-- [dortania opencore multiboot](https://github.com/dortania/OpenCore-Multiboot)
-- [WhateverGreen Intel HD Manual](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
-- `Configuration.pdf` and `Differences.pdf` in each OpenCore releases.
 - [daliansky/OC-little](https://github.com/daliansky/OC-little)
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
-- [修复Gigabyte Z690板上的睡眠唤醒问题](https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/page-132)
 
-**务必阅读上述参考资料**
+### 需求 / Requirement 
 
-**No seriously, PLEASE read those.**
-
-## Requirement / 需求和依赖
-
-### Basic / 基本需求
-
-- A macOS machine (optional): to create the macOS installer and build the EFI.
-  一台已经安装好 macOS 的机器，用于制作 macOS 安装器和编译本项目
-- Flash drive, 16GB or more, for the above purpose.
-  一个容量大于等于 16 GiB 的 U 盘
-- [PlistEDPlus](https://github.com/ic005k/PlistEDPlus) to edit plist files on Windows.
-  编辑 plist 文件的工具 [PlistEDPlus](https://github.com/ic005k/PlistEDPlus)
-- [ProperTree](https://github.com/corpnewt/ProperTree) to edit plist files on Windows/macOS.
-  编辑 plist 文件的工具 [ProperTree](https://github.com/corpnewt/ProperTree)
-- [MaciASL](https://github.com/acidanthera/MaciASL) for patching ACPI tables and editing ACPI patches.
-  用于修补和编辑 ACPI 的工具 [MaciASL](https://github.com/acidanthera/MaciASL)
-- [HackinTool](https://github.com/headkaze/Hackintool) for diagnosis ONLY. Most of the built-in patches are outdated.
-  **仅用于** 诊断的 [HackinTool](https://github.com/headkaze/Hackintool)，大部分内置的补丁和工具已经过时、不再适用
+- Flash drive, 4GB or more, for the above purpose.
+  一个容量大于等于 4 GB 的 U 盘
+- [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) to edit plist files on Windows/macOS.
+  编辑 plist 文件的工具 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools)
 - Patience and time, especially if this is your first time Hackintosh-ing.
   耐心和时间。如果你是第一次进行黑苹果，这尤为重要
 
@@ -53,19 +36,34 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 #### 固态硬盘 / SSD
 
-三星 PM981/PM981a/PM991 和 镁光 2200S **完全** 无法使用，务必更换至少一块 SSD 硬盘。
+- 三星 PM981/PM981a/PM991 和 镁光 2200S **完全** 无法使用，务必更换至少一块 SSD 硬盘。
 
-Samusung PM981/PM981a/PM991 and Micron 2200S is not supported AT ALL. Make sure to switch at least one SSD.
+  Samusung PM981/PM981a/PM991 and Micron 2200S is not supported AT ALL. Make sure to switch at least one SSD.
 
 #### 无线网卡 / Wireless Card
 
-It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」(I mean, 100x FASTER!)
+- 建议使用博通无线网卡以获得 **更好** 的性能和使用原生的关于「苹果生态」的功能（更好，指速度快 **100 倍**）
 
-建议使用博通无线网卡以获得 **更好** 的性能和使用原生的关于「苹果生态」的功能（更好，指速度快 **100 倍**）
+  It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」(I mean, 100x FASTER!)
+
+### EFI修改 / EFI Modification
+
+#### USB 2.0, USB 3.0
+
+- 请在安装 macOS Big Sur 11.3以及更新版本前，使用 [USBToolBox](https://github.com/USBToolBox/tool) 定制USB端口。
+
+  Please customize the USB Port with [USBToolBox](https://github.com/USBToolBox/tool) before installing MacOS Big Sur 11.3 or later. 
+
+#### ACPI 错误 / ACPI Errors 
+
+- 启用`将MC__更改为MCHC( on ASUS )`，或`ADBG更改为XDBG( on Gigabyte )`
+
+  Enable change `MC__ to MCHC( on ASUS )`, or `change ADBG to XDBG( on Gigabyte )`
 
 ### 修改BIOS设置 / BIOS Settings
 
 禁用 / Disabled
+
 * Fast Boot～快速启动
 * VT-d(can be enabled if you set DisableIoMapper Quirks to YES)～VT-d（如果DisableIOMapper Quirks设置为YES，则可以启用）
 * CSM～CSM 兼容性支持模块
@@ -79,6 +77,7 @@ It is recommended to use Broadcom wireless network card to obtain **Better** per
 * Resizable BAR Support
 
 启用 / Enabled
+
 * VT-x～VT-x
 * UEFI启动模式。请不要使用Legacy（UEFI startup mode. Please don't use Legacy）
 * 硬盘模式改AHCI。不能用IDE和RST RAID。（Hard disk mode changed to AHCI. IDE and RST Raid cannot be used）
@@ -90,32 +89,48 @@ It is recommended to use Broadcom wireless network card to obtain **Better** per
 * DVMT Pre-Allocated(iGPU Memory): DVMT预分配（iGPU内存）：64MB及以上 （64MB and above）
 * Legacy RTC Device～传统RTC设备
 
-## 其他信息 / Other Information
+## 安装后 / Post-Install 
 
-OpenCore关于Kernel的Quirks XhciPortLimit 在macOS Big Sur 11.3及更新版本中失效。
+### 需求 / Requirement 
 
-OpenCore Quirks XhciPortLimit for Kernel is invalid in macOS Big Sur 11.3 and later.
+- [MaciASL](https://github.com/acidanthera/MaciASL) for patching ACPI tables and editing ACPI patches.
+  用于修补和编辑 ACPI 的工具 [MaciASL](https://github.com/acidanthera/MaciASL)
+- [Hackintool](https://github.com/headkaze/Hackintool) for diagnosis ONLY. Most of the built-in patches are outdated.
+  **仅用于** 诊断的 [Hackintool](https://github.com/headkaze/Hackintool)，大部分内置的补丁和工具已经过时、不再适用
 
-请在安装 macOS Big Sur 11.3以及更新版本前，定制USB端口。
+### EFI修改 / EFI Modification
 
-Please customize the USB Port before installing MacOS Big Sur 11.3 or later.
+现在的EFI**仅仅**能够启动，但仍推荐您做最后的润色         
 
-在安装完 macOS Big Sur 11.3以及更新版本后，请禁用config-Kernel-Quirks-XhciPortLimit 。
+The current EFI can **only** boot and for post-install it's recommended to put the final touches on your hack.
 
-After installing macOS Big Sur 11.3 and later, disable config-Kernel-Quirks-XhciPortLimit .           
+#### 增加额外的内核扩展 / Add extra kexts
 
-如果您遇到相关的ACPI错误，请启用*将MC__更改为MCHC，*并可能将*ADBG更改为XDBG*
+- [AirportItlwm](https://github.com/OpenIntelWireless/itlwm) for Intel Wi-Fi
+- [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) for Intel Bluetooth
+- [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) for Brcm Wi-Fi
+- [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM) for Brcm Bluetooth
+- [IntelMausi](https://github.com/acidanthera/IntelMausi) for Intel Ethernet
+- [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X) for Realtek 8111
+- [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet) for Realtek 8125
 
-If you get ACPI Errors,please enable change *MC__ to MCHC*
- 
+#### 定制 ACPI （可选） / Custom ACPI (optional)
+
+- [SSDT-EC-USBX.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-methods/manual.html#finding-the-acpi-path) for simpler / 更简洁
+- [SSDT-PLUG-ALT.aml](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-PLUG-ALT.dsl) for simpler / 更简洁
+- [SSDT-SBUS-MCHC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html) for correct temperature, fan, voltage, ICH, etc readings / 正确的温度、风扇、电压、ICH 等读数
+- [SSDT-HPET.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/irq.html) for IRQ Conflicts (rarely used)  / IRQ 冲突（极少使用）
+- [SSDT-RHUB](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml) for USB (rarely used)  / USB（极少使用）
+- SSDT-DMAC provides an interface between the bus and the input-output devices , share the bus with the processor to make the data transfer, speedups the memory operations by bypassing the involvement of the CPU  (rarely used) / 在总线和输入输出设备之间提供了一个接口，与处理器共享总线以进行数据传输，通过绕过CPU的参与来加快内存操作（极少使用）
 
 ## End / 结语
-This EFI supports `macOS Catalina`,`macOS Big Sur`,`macOS Monterey` and `macOS Ventura Beta`       
 
-本项目所提供的EFI支持`macOS Catalina`,`macOS Big Sur`,`macOS Monterey`和`macOS Ventura Beta`
+This EFI supports `macOS Catalina`,`macOS Big Sur`,`macOS Monterey` and `macOS Ventura`       
+
+本项目所提供的EFI支持`macOS Catalina`,`macOS Big Sur`,`macOS Monterey`和`macOS Ventura`
 
 
-Welcome to submit [Issue](https://github.com/Fu-Yuxuan-hub/General-EFI-for-600-Series/issues) and [Pull request](https://github.com/Fu-Yuxuan-hub/General-EFI-for-600-Series/pulls)
+Welcome to submit [issue](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/issues) 
 
-欢迎各位积极提交[Issue](https://github.com/Fu-Yuxuan-hub/General-EFI-for-600-Series/issues)和[Pull request](https://github.com/Fu-Yuxuan-hub/General-EFI-for-600-Series/pulls)
+欢迎积极提交 [issue](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/issues)
 
