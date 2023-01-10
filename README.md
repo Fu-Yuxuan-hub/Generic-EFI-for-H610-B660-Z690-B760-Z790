@@ -26,10 +26,13 @@ Your warranty is now void. Please do some research if you have any concerns befo
 ### 需求 / Requirement 
 
 - Flash drive, 4GB or more, for the above purpose.
+  
   一个容量大于等于 4 GB 的 U 盘
 - [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) to edit plist files on Windows/macOS.
+  
   编辑 plist 文件的工具 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools)
 - Patience and time, especially if this is your first time Hackintosh-ing.
+  
   耐心和时间。如果你是第一次进行黑苹果，这尤为重要
 
 ### 硬件修改 / Hardware Modification
@@ -95,8 +98,10 @@ Your warranty is now void. Please do some research if you have any concerns befo
 ### 需求 / Requirement 
 
 - [MaciASL](https://github.com/acidanthera/MaciASL) for patching ACPI tables and editing ACPI patches.
+  
   用于修补和编辑 ACPI 的工具 [MaciASL](https://github.com/acidanthera/MaciASL)
 - [Hackintool](https://github.com/headkaze/Hackintool) for diagnosis ONLY. Most of the built-in patches are outdated.
+  
   **仅用于** 诊断的 [Hackintool](https://github.com/headkaze/Hackintool)，大部分内置的补丁和工具已经过时、不再适用
 
 ### EFI修改 / EFI Modification
