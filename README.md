@@ -57,6 +57,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 #### ACPI  
 
 - 启用`Change MC__ to MCHC( on ASUS )`，或`Change ADBG to XDBG( on Gigabyte )`
+  
   Enable `Change MC__ to MCHC( on ASUS )`, or `Change ADBG to XDBG( on Gigabyte )`
 ![截屏2023-01-10 14 25 41](https://user-images.githubusercontent.com/74492520/211483887-c93bf9eb-188c-4071-b418-41de0bad7b3d.png)
 
