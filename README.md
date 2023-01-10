@@ -54,11 +54,11 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
   Please customize the USB Port with [USBToolBox](https://github.com/USBToolBox/tool) before installing MacOS Big Sur 11.3 or later. 
 
-#### ACPI 错误 / ACPI Errors 
+#### ACPI  
 
-- 启用`将MC__更改为MCHC( on ASUS )`，或`ADBG更改为XDBG( on Gigabyte )`
-
-  Enable change `MC__ to MCHC( on ASUS )`, or `change ADBG to XDBG( on Gigabyte )`
+- 启用`Change MC__ to MCHC( on ASUS )`，或`Change ADBG to XDBG( on Gigabyte )`
+  Enable `Change MC__ to MCHC( on ASUS )`, or `Change ADBG to XDBG( on Gigabyte )`
+![截屏2023-01-10 14 25 41](https://user-images.githubusercontent.com/74492520/211483887-c93bf9eb-188c-4071-b418-41de0bad7b3d.png)
 
 ### 修改BIOS设置 / BIOS Settings
 
