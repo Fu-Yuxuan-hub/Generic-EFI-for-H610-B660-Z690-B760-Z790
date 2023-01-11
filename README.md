@@ -22,6 +22,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 - [dortania Getting Started with ACPI](https://dortania.github.io/OpenCore-Post-Install/)
 - [daliansky/OC-little](https://github.com/daliansky/OC-little)
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
+- [Wiki](ttps://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki) Page
 
 ### 需求 / Requirement 
 
@@ -35,6 +36,14 @@ Your warranty is now void. Please do some research if you have any concerns befo
   
   耐心和时间。如果你是第一次进行黑苹果，这尤为重要
 
+### 下载EFI / Download EFI
+
+- 完整的EFI请访问 [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) 页面，如果是日常使用，**请不要克隆或者下载 main 分支**
+
+  For the complete EFI, please visit [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) page, if it is for daily use, **please do not clone or download the main branch**
+
+![1](https://user-images.githubusercontent.com/74492520/211773835-c0b159db-ac22-4051-bd11-6ba1cc7f6833.jpg)
+
 ### 硬件修改 / Hardware Modification
 
 #### 固态硬盘 / SSD
@@ -45,9 +54,9 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 #### 无线网卡 / Wireless Card
 
-- 建议使用博通无线网卡以获得 **更好** 的性能和使用原生的关于「苹果生态」的功能（更好，指速度快 **100 倍**）
+- 建议使用博通无线网卡以获得 **更好** 的性能和使用原生的关于「苹果生态」的功能
 
-  It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」(I mean, 100x FASTER!)
+  It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」
 
 ### EFI修改 / EFI Modification
 
