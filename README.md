@@ -4,9 +4,9 @@
 
 ## 概览 / Overview
 
-辅助快速安装黑苹果的模板
+12/13代黑苹果的框架，**仅仅**为了通用
 
-Template for Quick installation of Hackintosh
+The frame of the Intel 12th/13th generation, for general use **only**  
 
 ## 免责声明 / Disclaimer
 
