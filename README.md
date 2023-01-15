@@ -44,6 +44,9 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 ![1](https://user-images.githubusercontent.com/74492520/211773835-c0b159db-ac22-4051-bd11-6ba1cc7f6833.jpg)
 
+### 创建安装U盘 / Create Installation Folder
+详见[Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder) / See [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder)
+
 ### 硬件修改 / Hardware Modification
 
 #### 固态硬盘 / SSD
