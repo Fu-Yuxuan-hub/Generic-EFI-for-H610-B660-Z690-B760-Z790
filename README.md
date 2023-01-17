@@ -4,9 +4,9 @@
 
 ## 概览 / Overview
 
-12/13代黑苹果的框架，**仅仅**为了通用
+为使用12/13代黑苹果所需要的基本文件
 
-The frame of the Intel 12th/13th generation, for general use **only**  
+Basic files required to use the 12/13 generation
 
 ## 免责声明 / Disclaimer
 
