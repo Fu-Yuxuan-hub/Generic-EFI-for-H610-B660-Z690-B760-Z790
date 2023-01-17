@@ -77,7 +77,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 - 待更
 
-#### Intel 
+#### Intel i225 Ethernet
 
 - 待更
 
