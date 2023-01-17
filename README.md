@@ -71,15 +71,22 @@ Your warranty is now void. Please do some research if you have any concerns befo
 - 启用`Change MC__ to MCHC( on ASUS )`，或`Change ADBG to XDBG( on Gigabyte )`
   
   Enable `Change MC__ to MCHC( on ASUS )`, or `Change ADBG to XDBG( on Gigabyte )`
-![截屏2023-01-10 14 25 41](https://user-images.githubusercontent.com/74492520/211483887-c93bf9eb-188c-4071-b418-41de0bad7b3d.png)
+  ![截屏2023-01-10 14 25 41](https://user-images.githubusercontent.com/74492520/211483887-c93bf9eb-188c-4071-b418-41de0bad7b3d.png)
 
 #### AMD Radeon RX 6x50 XT
 
-- 待更
+- 详见 [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/%E7%8B%AC%E7%AB%8B%E6%98%BE%E5%8D%A1-dGPU)
+- See [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/%E7%8B%AC%E7%AB%8B%E6%98%BE%E5%8D%A1-dGPU)
 
-#### Intel i225 Ethernet
+#### Aquantia AQC 107(s)/113
 
-- 待更
+- 详见 [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#aqc107s113)
+- See [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#aqc107s113)
+
+#### Intel I225-V Ethernet
+
+- 详见 [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#intel-i225-v)
+- See [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#intel-i225-v)
 
 ### 创建安装U盘 / Create Installation Folder
 详见 [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder) / See [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder)
