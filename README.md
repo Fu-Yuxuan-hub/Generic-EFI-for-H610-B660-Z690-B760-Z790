@@ -4,9 +4,9 @@
 
 ## 概览 / Overview
 
-为使用12/13代黑苹果所需要的基本文件
+为使用12/13代黑苹果所需要的基本文件（一定要看[Wiki](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki)!!!）
 
-Basic files required to use the 12/13 generation
+Basic files required to use the 12/13 generation(must see [Wiki](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki)!!!)
 
 ## 免责声明 / Disclaimer
 
