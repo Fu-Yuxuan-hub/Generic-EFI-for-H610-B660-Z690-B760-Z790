@@ -9,7 +9,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>AMD-Radeon-6000</string>
+	<string>AMD-Radeon-RX</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
@@ -20,26 +20,7 @@
 	<string>0.0.1</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>AppleUSBXHCISPT 6800</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-			<key>IOClass</key>
-			<string>AppleUSBXHCISPT</string>
-			<key>IOPCIPauseCompatible</key>
-			<true/>
-			<key>IOPCIPrimaryMatch</key>
-			<string>0x73a41002 0x73a61002</string>
-			<key>IOPCITunnelCompatible</key>
-			<true/>
-			<key>IOPCIUseDeviceMapper</key>
-			<true/>
-			<key>IOProbeScore</key>
-			<integer>900</integer>
-			<key>IOProviderClass</key>
-			<string>IOPCIDevice</string>
-		</dict>
-		<key>AppleUSBXHCISPT 6900</key>
+		<key>AppleUSBXHCISPT 6000</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
