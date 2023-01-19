@@ -105,7 +105,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 * Secure Boot～安全启动
 * Parallel Port～并口
 * Serial/COM Port～串行/COM端口
-* Resizable BAR Support
+* Resizable BAR Support(can be enabled if you set ResizeAppleGpuBars Quirks to 0)～（如果ResizeAppleGpuBars Quirks设置为0，则可以启用）
 
 启用 / Enabled
 
