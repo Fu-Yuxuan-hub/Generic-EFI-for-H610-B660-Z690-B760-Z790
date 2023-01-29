@@ -4,9 +4,9 @@
 
 ## 概览 / Overview
 
-为使用12/13代黑苹果所需要的基本文件（一定要看[Wiki](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki)!!!）
+为使用12/13代黑苹果所需要的基本文件
 
-Basic files required to use the 12/13 generation(must see [Wiki](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki)!!!)
+Basic files required to use the 12/13 generation
 
 ## 免责声明 / Disclaimer
 
@@ -22,7 +22,6 @@ Your warranty is now void. Please do some research if you have any concerns befo
 - [dortania Getting Started with ACPI](https://dortania.github.io/OpenCore-Post-Install/)
 - [daliansky/OC-little](https://github.com/daliansky/OC-little)
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
-- [Wiki](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki) Page
 
 ### 需求 / Requirement 
 

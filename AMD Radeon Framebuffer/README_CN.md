@@ -1,6 +1,6 @@
 ## AMD Radeon Framebuffer
 
-**The patch is as follows**
+**补丁如下**
 
 ```
 <key>DeviceProperties</key>
@@ -24,9 +24,9 @@
     </dict>
 ```
 
-Replace `xxxx` with the following
+将`xxxx`替换为以下内容
 
-| dGPU        | Content      |
+| dGPU        | 内容         |
 | ----------- | ------------ |
 | 5500 Series | ATY,Python   |
 | 5700 Series | ATY,Adder    |
@@ -34,4 +34,4 @@ Replace `xxxx` with the following
 | 6800 Series | ATY,Belknap  |
 | 6900 Series | ATY,Carswell |
 
-* **This is not needed for Polaris cards**
+* **北极星核心不需要此项**
