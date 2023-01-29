@@ -11,3 +11,7 @@ This RX 6650 XT's ACPI path is `_SB_.PCI0.PEG0.PEGP`
 Change the above three parts to `PCI0.PEG0.PEGP`
 
 Save as `ACPI Machine Language Binary` and move it into ACPI folder. Enable it in OC
+
+**NOTE:**
+
+ONLY support AMD Radeon RX 6650/6950 XT

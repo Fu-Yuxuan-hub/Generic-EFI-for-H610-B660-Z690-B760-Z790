@@ -11,3 +11,7 @@
 将以上三个部分改为 `PCI0.PEG0.PEGP`<br>
 
 保存为 `ACPI Machine Language Binary` 并且移至ACPI目录下，在OC中加载
+
+**注：**
+
+仅支持 AMD Radeon RX 6650/6950 XT

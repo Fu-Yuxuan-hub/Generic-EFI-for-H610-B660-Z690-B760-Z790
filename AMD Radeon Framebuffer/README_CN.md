@@ -34,4 +34,6 @@
 | 6800 Series | ATY,Belknap  |
 | 6900 Series | ATY,Carswell |
 
-* **北极星核心不需要此项**
+**注：**
+
+北极星核心不需要此项

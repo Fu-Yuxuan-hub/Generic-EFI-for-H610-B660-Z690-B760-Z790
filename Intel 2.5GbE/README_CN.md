@@ -49,11 +49,9 @@
 `Kernel-Quirks-DisableIoMapper` 调整为 `False`<br>
 
 **此方法来自[@13469977015002](https://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1940034&highlight=i225)**<br>
-**This method comes from [@13469977015002](https://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1940034&highlight=i225)**
 
 ### 方法二
 
 启用 `AppleIntelI210Ethernet.kext` 和 `SSDT-I225Ethernet.aml`(使用你的ACPI路径) 并且在 `boot-args` 下添加 `e1000=0`
 
 **此方法来自[@w7758521](https://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1943039&highlight=i225)**<br>
-**This method comes from [@w7758521](https://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1943039&highlight=i225)**

@@ -26,12 +26,14 @@
 
 Replace `xxxx` with the following
 
-| dGPU        | Content      |
-| ----------- | ------------ |
-| 5500 Series | ATY,Python   |
-| 5700 Series | ATY,Adder    |
-| 6600 Series | ATY,Henbury  |
-| 6800 Series | ATY,Belknap  |
-| 6900 Series | ATY,Carswell |
+| dGPU        | Content              |
+| ----------- | -------------------- |
+| 5500 Series | ATY,Python / ATY,Boa |
+| 5700 Series | ATY,Adder            |
+| 6600 Series | ATY,Henbury          |
+| 6800 Series | ATY,Belknap          |
+| 6900 Series | ATY,Carswell         |
 
-* **This is not needed for Polaris cards**
+**NOTE:**
+
+This is not needed for Polaris cards
