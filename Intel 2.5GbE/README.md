@@ -51,4 +51,6 @@ Change `Kernel-Quirks-DisableIoMapper` to `False`
 
 Enable `AppleIntelI210Ethernet.kext` and `SSDT-I225Ethernet.aml`(Use your ACPI path) and add `e1000=0` to `boot-args`
 
+> If you have two i225-V, you need to use two different `SSDT-I225Ethernet.aml`. (Use different ACPI path)
+
 **This method comes from [@w7758521](https://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1943039&highlight=i225)**

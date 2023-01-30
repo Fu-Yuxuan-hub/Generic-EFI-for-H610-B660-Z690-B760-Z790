@@ -54,4 +54,6 @@
 
 启用 `AppleIntelI210Ethernet.kext` 和 `SSDT-I225Ethernet.aml`(使用你的ACPI路径) 并且在 `boot-args` 下添加 `e1000=0`
 
+> 如果你有两个i225-v, 则你需要使用两个不同的 `SSDT-I225Ethernet.aml`. (使用不同的ACPI路径)
+
 **此方法来自[@w7758521](https://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1943039&highlight=i225)**<br>
