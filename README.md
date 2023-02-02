@@ -74,18 +74,18 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 #### AMD Radeon RX 6x50 XT
 
-- 详见 [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/%E7%8B%AC%E7%AB%8B%E6%98%BE%E5%8D%A1-dGPU)
-- See [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/%E7%8B%AC%E7%AB%8B%E6%98%BE%E5%8D%A1-dGPU)
+- 详见 [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/AMD%20Radeon%20RX%206x50%20XT/README_CN.md)
+- See [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/AMD%20Radeon%20RX%206x50%20XT/README.md)
 
 #### Aquantia AQC 107(s)/113
 
-- 详见 [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#aqc107s113)
-- See [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#aqc107s113)
+- 详见 [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Aquantia%2010GbE/README_CN.md)
+- See [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Aquantia%2010GbE/README.md)
 
 #### Intel I225-V Ethernet
 
-- 详见 [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#intel-i225-v)
-- See [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/有线网卡-Ethernet#intel-i225-v)
+- 详见 [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Intel%202.5GbE/README_CN.md)
+- See [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Intel%202.5GbE/README.md)
 
 ### 创建安装U盘 / Create Installation Folder
 详见 [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder) / See [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder)
@@ -156,14 +156,28 @@ The current EFI can **only** boot and for post-install it's recommended to put t
 - SSDT-DMAC provides an interface between the bus and the input-output devices , share the bus with the processor to make the data transfer, speedups the memory operations by bypassing the involvement of the CPU  (rarely used) / 在总线和输入输出设备之间提供了一个接口，与处理器共享总线以进行数据传输，通过绕过CPU的参与来加快内存操作（极少使用）
 - SSDT-DMAR for Intel i225-V Ethernet driver / Intel i225-V网卡驱动
 
-## End / 结语
+## 贡献 / Contribution
 
-This EFI supports `macOS Catalina`,`macOS Big Sur`,`macOS Monterey` and `macOS Ventura`       
+#### 如果您喜欢这个项目，请考虑通过以下方式支持它：<br>
 
-本项目所提供的EFI支持`macOS Catalina`,`macOS Big Sur`,`macOS Monterey`和`macOS Ventura`
+#### If you like this project, please consider supporting it via:
+
+* 给它一颗星！
+
+  Give it a star!
+
+* 如果您遇到任何问题或想提出建议，请提出issue。
+
+  Opening up an issue if you encountered any problem or want to make suggestions.
+
+## Credits
+
+* [acidanthera](https://github.com/acidanthera) for OpenCore.
+* Apple for macOS.
 
 
-Welcome to submit [issue](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/issues) 
+## Notes
 
-欢迎积极提交 [issue](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/issues)
+* 此仓库内容仅用于分享和帮助新手安装macOS，请勿用于商业用途。
 
+  The contents of this repo are only for sharing and helping novices install macOS, not for commercial use.
