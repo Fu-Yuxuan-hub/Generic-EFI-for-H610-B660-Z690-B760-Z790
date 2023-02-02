@@ -87,9 +87,6 @@ Your warranty is now void. Please do some research if you have any concerns befo
 - 详见 [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Intel%202.5GbE/README_CN.md)
 - See [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Intel%202.5GbE/README.md)
 
-### 创建安装U盘 / Create Installation Folder
-详见 [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder) / See [Create Installation Folder](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/Create-Installation-Folder)
-
 ### 修改BIOS设置 / BIOS Settings
 
 禁用 / Disabled
@@ -104,6 +101,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 * Secure Boot～安全启动
 * Parallel Port～并口
 * Serial/COM Port～串行/COM端口
+* iGPU～核心显卡
 * Resizable BAR Support(can be enabled if you set ResizeAppleGpuBars Quirks to 0)～（如果ResizeAppleGpuBars Quirks设置为0，则可以启用）
 
 启用 / Enabled
