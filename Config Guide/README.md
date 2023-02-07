@@ -543,6 +543,7 @@ System Integrity Protection bitmask
 | **keepsyms=1**  | This is a companion setting to debug=0x100 that tells the OS to also print the symbols on a kernel panic. That can give some more helpful insight as to what's causing the panic itself. |
 
 * **Networking-specific boot-args**:
+
 | boot-args   | Description                                                  |
 | :---------- | :----------------------------------------------------------- |
 | **e1000=0** | Disables `com.apple.DriverKit-AppleEthernetE1000` (Apple's DEXT driver) from matching to the Intel I225-V Ethernet controller found on higher end Comet Lake boards, causing Apple's I225 kext driver to load instead.<br/>This boot argument is optional on most boards as they are compatible with the DEXT driver. However, it is required on Gigabyte and several other boards, which can only use the kext driver, as the DEXT driver causes hangs.<br/>You don't need this if your board didn't ship with the I225-V NIC. |
