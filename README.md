@@ -164,6 +164,10 @@ The current EFI can **only** boot and for post-install it's recommended to put t
 
   Give it a star!
 
+* 给我[买](https://ko-fi.com/fuyuxuan)一杯咖啡😝。
+
+  [Buy](https://ko-fi.com/fuyuxuan) me a coffee😝.
+
 * 如果您遇到任何问题或想提出建议，请提出issue。
 
   Opening up an issue if you encountered any problem or want to make suggestions.
