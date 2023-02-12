@@ -1,4 +1,4 @@
-# Desktop Alder Lake / Raptor Lake
+# Desktop Alder Lake
 
 | Support               | Version              |
 | :-------------------- | :------------------- |
