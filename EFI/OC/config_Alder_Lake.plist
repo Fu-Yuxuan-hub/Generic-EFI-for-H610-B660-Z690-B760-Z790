@@ -40,6 +40,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>ASUS Z690 need this to avoid ACPI Error with Delete original xh_adls3 table in delete</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-XH_ADLS3.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>i225 Ethernet driver. You need to enable this and AppleIntelI210Ethernet.kext. And add e1000=0 in boot-args</string>
 				<key>Enabled</key>
 				<false/>
@@ -78,6 +86,20 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>RE1BUg==</data>
+			</dict>
+			<dict>
+				<key>All</key>
+				<false/>
+				<key>Comment</key>
+				<string>Delete original xh_adls3 table</string>
+				<key>Enabled</key>
+				<false/>
+				<key>OemTableId</key>
+				<data>eGhfYWRsczM=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
 			</dict>
 		</array>
 		<key>Patch</key>
