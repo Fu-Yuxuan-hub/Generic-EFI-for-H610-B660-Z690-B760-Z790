@@ -13,17 +13,17 @@ You need to enable ***VT-d*** in BIOS and disable ***DisableIoMapper*** in OpenC
 
 
 
-### Frequently Asked Questions
+# Frequently Asked Questions
 
-#### Installation
+## Installation
 
-**What's the difference between `SSDT-I225V-Ethernet` and `AppleVTD`**
+### What's the difference between `SSDT-I225V-Ethernet` and `AppleVTD`
 
 | Ways                | Driver                                  |
 | ------------------- | --------------------------------------- |
 | SSDT-I225V-Ethernet | com.apple.driver.AppleIntelI210Ethernet |
 | AppleVTD            | com.apple.DriverKit-AppleEthernetE1000  |
 
-**Why need AppleIntelI210Ethernet.kext on Ventura**
+### Why need AppleIntelI210Ethernet.kext on Ventura
 
 Apple delete this driver on Ventura. It is in` /System/Library/Extensions/IONetworkingFamily.kext/Contents/PlugIns `
