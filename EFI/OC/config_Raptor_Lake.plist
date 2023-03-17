@@ -656,7 +656,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<true/>
+			<false/>
 			<key>CustomPciSerialDevice</key>
 			<false/>
 			<key>DisableIoMapper</key>
