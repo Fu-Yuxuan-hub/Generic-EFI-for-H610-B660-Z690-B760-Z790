@@ -1,48 +1,54 @@
-## Fixing Sleep
+# Fixing Sleep
 
-* Before we start, please confirm that you have mapped your USB currently.
+## BIOS settings
 
-### BIOS Setting
+**Disabled**
 
-* 700 Series motherboard: After sleep, if your hacintosh is still running and freezes, you shoule enable **ErP** in BIOS.
+* Thunderbolt (enable if required)
+* RTC wakeup (if present)
+* Wake on LAN (enable if required)
+
+**Enable**
+
+* ErP
+
+## OpenCore Settings
+
+### USBMap
+
+* Please customize the USB correctly
 
 ### ACPI
 
-* If the bluetooth is abnormal after waking up, you need add **SSDT-RHUB** in OpenCore.
+* If bluetooth doesn't work after wake up, please add ***SSDT-RHUB***.
+* Jingyue motherboard please add ***SSDT-PMEE***
 
 ### DeviceProperties
 
-* Fix double press to wake up. The patch as follows:
+* Fix double press to wake up the computer. The patch is as follows:
 
-```
-<dict>
-	<key>DeviceProperties</key>
-	<dict>
-		<key>Add</key>
-		<dict>
-			<key>USB Device Path</key>
-			<dict>
-				<key>acpi-wake-type</key>
-				<integer>1</integer>
-			</dict>
-		</dict>
-	</dict>
-</dict>
+![Screenshot 2023-04-05 20 05 41](https://user-images.githubusercontent.com/74492520/230076717-1065454d-6cad-4017-b8a7-6219d4e30ab2.png)
 
-```
+**Note**: Some motherboards have two USB controllers, and the external controller has a low wake-up priority, so it needs to be pressed twice. (ASUS TUF)
 
-**NOTE**: Some motherboards have two USB controllers, and the external USB controller has a lower wake-up priority and needs to be pressed twice. (ASUS TUF)
+### Misc
 
-### Cannot sleep motherboard
+* Misc-Hibernation Mode is None
 
-* New ASUS BIOS has a RTC mistake (ASUS PRIME B660 with BIOS 2212)
-* Some built-in Aquantia 10GbE Ethernet (such as GIGABYTE Z790 AORUS MASTER)
+## System Settings
+
+* All are green in Hackintool
+
+![Screenshot 2023-04-05 20 07 02](https://user-images.githubusercontent.com/74492520/230076750-711111f9-2fd8-4bdd-84f1-1f8c1017ce3f.png)
+
+* Settings - energy saving is all turned off (except putting the hard disk into sleep state)
+
+![Screenshot 2023-04-05 20 09 13](https://user-images.githubusercontent.com/74492520/230076790-a296c140-1194-4011-b220-32b9745016ed.png)
+
+**Note**: If the computer cannot go to sleep automatically, please enable power nap
 
 
+## Boards that cannot sleep
 
-
-
-
-
-
-
+* ASUS with latest BIOS (ASUS PRIME B660 with BIOS 2212)
+* Some motherboards with built-in Aquantia 10GbE network card (such as GIGABYTE Z790 AORUS MASTER)
