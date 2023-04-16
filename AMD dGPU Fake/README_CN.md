@@ -1,7 +1,5 @@
 ## dGPU Fake
 
-## dGPU Fake
-
 仿冒 AMD Radeon Pro 系列并且注入 AAPL,slot-name, ATY,EFIVersion 和 AAPL,slot-name.
 
 > 事实上，它并没有太多作用。它的作用不及 PP_PhmSoftPowerPlayTable
