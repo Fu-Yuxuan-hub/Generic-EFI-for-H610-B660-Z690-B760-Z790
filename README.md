@@ -4,9 +4,9 @@
 
 ## 概览 / Overview
 
-为使用12/13代黑苹果所需要的基本文件
+更简单的安装和使用 12/13 代黑苹果
 
-Basic files required to use the 12/13 generation
+Easier installation and use of 12/13 generation hackintosh
 
 ## 免责声明 / Disclaimer
 
@@ -14,25 +14,27 @@ Basic files required to use the 12/13 generation
 
 Your warranty is now void. Please do some research if you have any concerns before utilizing my project. I am not responsible for any loss, including but not limited to Kernel Panic, device fail to boot or can not function normally, storage damage or data loss, atomic bombing, World War III, The CK-Class Restructuring Scenario that SCP Foundation can not prevent, and so on.
 
-## 安装前 / Before Installation 
+## 安装前 / Before Installation
 
 ### 阅读以下资料 / Read the following reference
 
-- [dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+- [dortania&#39;s OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [dortania Getting Started with ACPI](https://dortania.github.io/OpenCore-Post-Install/)
 - [daliansky/OC-little](https://github.com/daliansky/OC-little)
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
 
-### 需求 / Requirement 
+### 需求 / Requirement
 
 - Flash drive, 4GB or more, for the above purpose.
-  
+
   一个容量大于等于 4 GB 的 U 盘
+
 - [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) to edit plist files on Windows/macOS.
-  
+
   编辑 plist 文件的工具 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools)
+
 - Patience and time, especially if this is your first time Hackintosh-ing.
-  
+
   耐心和时间。如果你是第一次进行黑苹果，这尤为重要
 
 ### 硬件修改 / Hardware Modification
@@ -49,43 +51,62 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
   It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」
 
-### 下载EFI / Download EFI
+### 下载 EFI / Download EFI
 
-- 完整的EFI请访问 [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) 页面，如果是日常使用，**请不要克隆或者下载 main 分支**
+- 发行版EFI请访问 [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) 页面，**请勿**克隆或者下载 「main 分支」
 
-  For the complete EFI, please visit [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) page, if it is for daily use, **please do not clone or download the main branch**
+  For the released EFI, please visit [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) page. **Please do not** clone or download the 「main branch」
 
-![1](https://user-images.githubusercontent.com/74492520/211773835-c0b159db-ac22-4051-bd11-6ba1cc7f6833.jpg)
-
-### EFI修改 / EFI Modification
+### EFI 调整 / EFI Adaption
 
 #### USB 2.0, USB 3.0
 
 - 请在安装 macOS Big Sur 11.3以及更新版本前，使用 [USBToolBox](https://github.com/USBToolBox/tool) 定制USB端口。
 
-  Please customize the USB Port with [USBToolBox](https://github.com/USBToolBox/tool) before installing MacOS Big Sur 11.3 or later. 
+  Please customize the USB Port with [USBToolBox](https://github.com/USBToolBox/tool) before installing MacOS Big Sur 11.3 or later.
 
-#### ACPI  
+#### ACPI
 
-- 启用`Change MC__ to MCHC( on ASUS )`，或`Change ADBG to XDBG( on Gigabyte )`
-  
-  Enable `Change MC__ to MCHC( on ASUS )`, or `Change ADBG to XDBG( on Gigabyte )`
+- There are many configurations with various ACPI patches. Some Alder Lake systems use none of these patches. - Apply as needed:
+
+  在 Alder Lake 平台上有各种 ACPI 补丁的配置。其中一些 Alder Lake 系统不使用这些补丁。 - 按需启用：
+
   ![截屏2023-01-10 14 25 41](https://user-images.githubusercontent.com/74492520/211483887-c93bf9eb-188c-4071-b418-41de0bad7b3d.png)
-
+  
+  * Enable *Change MC__ to MCHC* and possibly *Change ADBG to XDBG* as shown above, if you encounter relevant ACPI Errors:
+  
+    如果您遇到相关的 ACPI 错误，请启用 *Change MC__ to MCHC* 并尝试启用 *Change ADBG to XDBG* 如上所示：
+  
+    * See: [fix wake from sleep issue on ***Gigabyte*** *Z690* boards](https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/page-132#post-2291256).
+  
+      参阅：[修复 ***Gigabyte*** *Z690* 板上的睡眠唤醒问题](https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/ 第 132 页#post-2291256)。
+  
+    * *Change ADBG to XDBG* is related to an [ACPI error](https://www.tonymacx86.com/threads/gigabyte-z690-aero-g-i5-12600k-amd-rx-6800-xt.317179/page-25#post-2291723) on **Gigabyte** Z690 boards.
+  
+      *Change ADBG to XDBG* 与在**技嘉** Z690 板上的 [ACPI 错误](https://www.tonymacx86.com/threads/gigabyte-z690-aero-g-i5-12600k-amd-rx-6800-xt.317179/ page-25#post-2291723) 有关 。
+  
+    * *Change MC__ to MCHC* is also used on **ASUS** Z690 boards.
+  
+      *Change MC__ to MCHC* 也适用于 **ASUS** Z690 主板。
+  
 #### AMD Radeon RX 6x50 XT
 
-- 详见 [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/AMD%20Radeon%20RX%206x50%20XT/README_CN.md)
-- See [AMD Radeon RX 6x50 XT](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/AMD%20Radeon%20RX%206x50%20XT/README.md)
+* 启用 ACPI 文件夹下的 *SSDT-6x50_FakeID.aml* 或 [定制](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/AMD%20Radeon%20RX%206x50%20XT/README_CN.md) 您的专属驱动
 
-#### Aquantia AQC 107(s)/113
+  Enable *SSDT-6x50_FakeID.aml* in the ACPI folder or [customize](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/AMD%20Radeon%20RX%206x50%20XT/README.md) your exclusive driver
 
-- 详见 [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Aquantia%2010GbE/README_CN.md)
-- See [AQC107(s)/113](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Aquantia%2010GbE/README.md)
+#### 以太网 / Ethernet
 
-#### Intel I225-V Ethernet
+See:
 
-- 详见 [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Intel%202.5GbE/README_CN.md)
-- See [Intel I225-V](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Intel%202.5GbE/README.md)
+| Device                 | VT-d      | OpenCore                                                     | NOTE                                                         |
+| ---------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
+| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
+| Intel-i225-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i225-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
 
 ### 修改BIOS设置 / BIOS Settings
 
@@ -117,22 +138,22 @@ Your warranty is now void. Please do some research if you have any concerns befo
 * DVMT Pre-Allocated(iGPU Memory): DVMT预分配（iGPU内存）：64MB及以上 （64MB and above）
 * Legacy RTC Device～传统RTC设备
 
-## 安装后 / Post-Install 
+## 安装后 / Post-Install
 
-### 需求 / Requirement 
+### 需求 / Requirement
 
 - [MaciASL](https://github.com/acidanthera/MaciASL) for patching ACPI tables and editing ACPI patches.
-  
+
   用于修补和编辑 ACPI 的工具 [MaciASL](https://github.com/acidanthera/MaciASL)
 - [Hackintool](https://github.com/headkaze/Hackintool) for diagnosis ONLY. Most of the built-in patches are outdated.
-  
+
   **仅用于** 诊断的 [Hackintool](https://github.com/headkaze/Hackintool)，大部分内置的补丁和工具已经过时、不再适用
 
-### EFI修改 / EFI Modification
+### EFI 调整 / EFI Adaption
 
-现在的EFI**仅仅**能够启动，但仍推荐您做最后的润色         
+现在的EFI **仅仅** 能够启动，仍推荐您做最后的润色
 
-The current EFI can **only** boot and for post-install it's recommended to put the final touches on your hack.
+The current EFI can **only** boot. It's recommended to put the final touches on your hack.
 
 #### 增加额外的内核扩展 / Add extra kexts
 
@@ -140,11 +161,8 @@ The current EFI can **only** boot and for post-install it's recommended to put t
 - [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) for Intel Bluetooth
 - [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) for Brcm Wi-Fi
 - [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM) for Brcm Bluetooth
-- [IntelMausi](https://github.com/acidanthera/IntelMausi) for Intel Ethernet
-- [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X) for Realtek 8111
-- [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet) for Realtek 8125
 
-#### 定制 ACPI （可选） / Custom ACPI (optional)
+#### 优化 ACPI （可选） / Optimizing ACPI (optional)
 
 - [SSDT-EC-USBX.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-methods/manual.html#finding-the-acpi-path) for simpler / 更简洁
 - [SSDT-PLUG-ALT.aml](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-PLUG-ALT.dsl) for simpler / 更简洁
@@ -152,22 +170,19 @@ The current EFI can **only** boot and for post-install it's recommended to put t
 - [SSDT-HPET.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/irq.html) for IRQ Conflicts (rarely used)  / IRQ 冲突（极少使用）
 - [SSDT-RHUB.aml](https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml) for USB (rarely used)  / USB（极少使用）
 - [SSDT-DMAC.aml](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/AppleVTD#step-1-add-ssdt-dmac) provides an interface between the bus and the input-output devices , share the bus with the processor to make the data transfer, speedups the memory operations by bypassing the involvement of the CPU  (rarely used) / 在总线和输入输出设备之间提供了一个接口，与处理器共享总线以进行数据传输，通过绕过CPU的参与来加快内存操作（极少使用）
-- [SSDT-DMAR.aml](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/wiki/AppleVTD#fixing-dmar-table) for Intel i225-V Ethernet driver / Intel i225-V网卡驱动
 
 ## 贡献 / Contribution
 
-#### 如果您喜欢这个项目，请考虑通过以下方式支持它：<br>
+#### 如果您喜欢这个项目，请考虑通过以下方式支持它：`<br>`
 
 #### If you like this project, please consider supporting it via:
 
 * 给它一颗星！
 
   Give it a star!
-
 * 给我[买](https://ko-fi.com/fuyuxuan)一杯咖啡😝。
 
   [Buy](https://ko-fi.com/fuyuxuan) me a coffee😝.
-
 * 如果您遇到任何问题或想提出建议，请提出issue。
 
   Opening up an issue if you encountered any problem or want to make suggestions.
@@ -177,9 +192,8 @@ The current EFI can **only** boot and for post-install it's recommended to put t
 * [acidanthera](https://github.com/acidanthera) for OpenCore.
 * Apple for macOS.
 
-
 ## Notes
 
-* 此仓库内容仅用于分享和帮助新手安装macOS，请勿用于商业用途。
+* 此仓库仅用于分享和帮助安装 macOS，**请勿 **用于商业用途。
 
-  The contents of this repo are only for sharing and helping novices install macOS, not for commercial use.
+  This repo is only for sharing and helping install macOS, **not for** commercial use.
