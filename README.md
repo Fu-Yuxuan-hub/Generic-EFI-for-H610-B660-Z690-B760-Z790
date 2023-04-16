@@ -83,7 +83,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
   
     * *Change ADBG to XDBG* is related to an [ACPI error](https://www.tonymacx86.com/threads/gigabyte-z690-aero-g-i5-12600k-amd-rx-6800-xt.317179/page-25#post-2291723) on **Gigabyte** Z690 boards.
   
-      *Change ADBG to XDBG* 与在**技嘉** Z690 板上的 [ACPI 错误](https://www.tonymacx86.com/threads/gigabyte-z690-aero-g-i5-12600k-amd-rx-6800-xt.317179/page-25#post-2291723) 有关 。
+      *Change ADBG to XDBG* 可修复 **技嘉** Z690 板上的 [ACPI 错误](https://www.tonymacx86.com/threads/gigabyte-z690-aero-g-i5-12600k-amd-rx-6800-xt.317179/page-25#post-2291723) 有关 。
   
     * *Change MC__ to MCHC* is also used on **ASUS** Z690 boards.
   
