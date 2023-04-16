@@ -32,27 +32,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>AMD Radeon RX 6x50</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-6x50_FakeID.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>ASUS Z690 need this to avoid ACPI Error with Delete original xh_adls3 table in delete</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
 				<string>SSDT-XH_ADLS3.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-6650XT-73EF-GPU-SPOOF.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-6950XT-73A5-GPU-SPOOF.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
