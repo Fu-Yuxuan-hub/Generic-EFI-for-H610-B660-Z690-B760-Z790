@@ -36,7 +36,7 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
-				<string>SSDT-6x50_FakeID</string>
+				<string>SSDT-6x50_FakeID.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1202,6 +1202,8 @@
 			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
