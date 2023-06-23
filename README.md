@@ -3,7 +3,7 @@ Generic EFI for 600/700 series motherboards
 Generic EFI for 600/700 series motherboards, with installation settings and common kexts
 
 English(current)<br>
-[简体中文]()
+[简体中文](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/README_CN.md)
 
 ## Disclaimer
 
@@ -41,7 +41,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 #### Download EFI
 
-- Please visit [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) page, **Please do not** clone or download the 「main branch」
+- Please visit [Releases](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/releases) page, **Please do not** clone or download the 「main branch」
 
 #### ACPI
 
@@ -73,12 +73,12 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 | Device                 | VT-d      | OpenCore                                                     | NOTE                                                         |
 | ---------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| Intel-i225-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
-| Intel-i225-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
-| Intel-i226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
-| Intel-i226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
+| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
+| Intel-i225-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i225-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
 
 ### BIOS Settings
 
@@ -121,9 +121,9 @@ Your warranty is now void. Please do some research if you have any concerns befo
 * Give it a star!
 
 * [Buy](https://ko-fi.com/fuyuxuan) me a coffee😝.
-  * Also can [WeChat/Alipay]()
+  * Also can [WeChat](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Donation/WeChat.JPG) or [Alipay](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Donation/Alipay.JPG)
 
-* Opening up an issue if you encountered any problem or want to make suggestions.。
+* Opening up an issue if you encountered any problem or want to make suggestions.
   > Attention：Please ask questions according to the predetermined template
 
 ## Credits
@@ -134,3 +134,5 @@ Your warranty is now void. Please do some research if you have any concerns befo
 ## Attention
 
 * This repo is only for sharing and helping install Hackintosh, **not for** commercial use.
+
+© 杆杆只爱学习, Released under the MIT License.

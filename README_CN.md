@@ -2,7 +2,7 @@
 ========
 提供给 600/700 系列主板使用的通用 EFI，附带安装时的设置以及常用的 kext
 
-[English]()<br>
+[English](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/README.md)<br>
 简体中文 (当前)
 
 
@@ -41,7 +41,7 @@
 
 #### 下载 EFI
 
-- 请访问 [Releases](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/releases) 页面，**请勿** 克隆或者下载 「main 分支」
+- 请访问 [Releases](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/releases) 页面，**请勿** 克隆或者下载 「main 分支」
 
 #### ACPI
 
@@ -73,12 +73,12 @@
 
 | Device                 | VT-d      | OpenCore                                                     | NOTE                                                         |
 | ---------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| Intel-i225-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
-| Intel-i225-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
-| Intel-i226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
-| Intel-i226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/General-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
+| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
+| Intel-i225-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i225-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
+| Intel-i226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | See: [Intel 2.5GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Intel%202.5GbE) |
 
 ### BIOS设置 
 
@@ -121,7 +121,7 @@
 * 给它一颗星！
 
 * 给我[买](https://ko-fi.com/fuyuxuan)一杯咖啡😝。
-  * 也可以通过 [微信/支付宝]()
+  * 也可以通过 [微信](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Donation/WeChat.JPG) 或 [支付宝](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Donation/Alipay.JPG)
 
 * 如果您遇到任何问题或想提出建议，请提出issue。
   > 注意：请按照预定的模版提问
@@ -134,3 +134,5 @@
 ## 注意
 
 * 此仓库仅用于分享和帮助安装 Hackintosh，**请勿** 用于商业用途。
+
+© 杆杆只爱学习, Released under the MIT License.
