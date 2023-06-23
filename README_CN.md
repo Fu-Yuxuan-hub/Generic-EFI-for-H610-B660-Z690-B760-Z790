@@ -56,7 +56,15 @@
     * *Change ADBG to XDBG* 可修复 **技嘉** Z690 板上的 [ACPI 错误](https://www.tonymacx86.com/threads/gigabyte-z690-aero-g-i5-12600k-amd-rx-6800-xt.317179/page-25#post-2291723)。
   
     * *Change MC__ to MCHC* 也适用于 **ASUS** Z690 主板。
-  
+
+
+* 定制 SSDT （可选）
+
+  * [SSDT-EC-USBX.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-methods/manual.html#finding-the-acpi-path) 
+  * [SSDT-PLUG-ALT.aml](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-PLUG-ALT.dsl) 
+  * [SSDT-SBUS-MCHC.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html) 
+  * [SSDT-HPET.aml](https://dortania.github.io/Getting-Started-With-ACPI/Universal/irq.html) 
+
 #### AMD Radeon RX 6x50 XT
 
 * 启用 ACPI 文件夹下的 *SSDT-6x50_FakeID.aml* 
@@ -76,7 +84,7 @@
 
 重要：
 
-| 项                                | 启用/禁用 | 备注                                  |
+| 项                                | 选择 | 备注                                  |
 | --------------------------------- | --------- | ------------------------------------- |
 | Fast Boot                         | 禁用      |                                       |
 | VT-d                              | 禁用      | 安装系统后启用此项，以启用 *AppleVTD* |
@@ -85,14 +93,13 @@
 | Secure Boot                       | 禁用      |                                       |
 | Serial/COM Port                   | 禁用      |                                       |
 | Resizable BAR Support             | 禁用      | *64bit Bar2* 缺失                     |
-| VT-x                              |           |                                       |
-| UEFI startup mode                 |           |                                       |
-| Hard disk mode                    |           | *AHCI*                                |
-| Above 4G decoding                 |           |                                       |
-| Hyper-Threading                   |           |                                       |
-| EHCI/XHCI Hand-off                |           |                                       |
-| OS type: Windows 8.1/10 UEFI Mode |           |                                       |
-| DVMT Pre-Allocated(iGPU Memory)   |           | 64MB and above                        |
+| VT-x                              | 启用      |                                       |
+| UEFI startup mode                 | 启用      |                                       |
+| Hard disk mode                    | *AHCI*   |                                       |
+| Above 4G decoding                 | 启用      |                                       |
+| Hyper-Threading                   | 启用      |                                       |
+| EHCI/XHCI Hand-off                | 启用      |                                       |
+| DVMT Pre-Allocated(iGPU Memory)   | 64MB and above |                                 |
 
 其他
 
@@ -103,5 +110,27 @@
 | Intel Platform Trust(TPM) | 禁用      |                                 |
 | Parallel Port             | 禁用      |                                 |
 | iGPU                      | 禁用      | 会出现 *Reserved Memory Region* |
-| Execute Disable Bit       |           |                                 |
-| Legacy RTC Device         |           |                                 |
+| Execute Disable Bit       | 启用          |                                 |
+| Legacy RTC Device         | 启用          |                                 |
+| OS type                   | Windows 8.1/10 UEFI Mode |  200 系（不包括）之前的部分主板在 Other 模式下会将系统认作是 Windows 7 从而禁用 UEFI 的某些功能并开启 CSM                    |
+
+## 贡献 / Contribution
+
+#### 如果您喜欢这个项目，请考虑通过以下方式支持它：
+
+* 给它一颗星！
+
+* 给我[买](https://ko-fi.com/fuyuxuan)一杯咖啡😝。
+  * 也可以通过 [微信/支付宝]()
+
+* 如果您遇到任何问题或想提出建议，请提出issue。
+  > 注意：请按照预定的模版提问
+
+## Credits
+
+* [acidanthera](https://github.com/acidanthera) for OpenCore.
+* Apple for macOS.
+
+## 注意
+
+* 此仓库仅用于分享和帮助安装 Hackintosh，**请勿** 用于商业用途。
