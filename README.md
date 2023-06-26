@@ -30,7 +30,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 #### SSD
 
-- 三星 PM981/PM981a/PM991 和 镁光 2200S **完全** 无法使用，务必更换至少一块 SSD 硬盘。
+- Samusung PM981/PM981a/PM991 and Micron 2200S is not supported AT ALL. Make sure to switch at least one SSD.
 
 #### Wireless Card
 
@@ -82,7 +82,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 ### BIOS Settings
 
-重要：
+Important：
 
 | items                                | Options | Comments                                  |
 | --------------------------------- | --------- | ------------------------------------- |
@@ -101,9 +101,9 @@ Your warranty is now void. Please do some research if you have any concerns befo
 | EHCI/XHCI Hand-off                | Enabled      |                                       |
 | DVMT Pre-Allocated(iGPU Memory)   | 64MB and above |                                 |
 
-其他
 
-| 项                        | 启用/禁用 | 备注                            |
+
+| items                        | Options | Comments                            |
 | ------------------------- | --------- | ------------------------------- |
 | Thunderbolt               | Disabled      |                                 |
 | Intel SGX                 | Disabled      |                                 |
