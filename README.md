@@ -35,7 +35,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 #### Wireless Card
 
 - It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」
-  >In macOS Sonoma ，Apple has removed *IO80211FamilyLegacy* which made the Broadcom wireless card no longer available in macOS Sonoma.
+  >In macOS Sonoma ，Apple has removed *IO80211FamilyLegacy*, so the Broadcom wireless card need [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/pull/1077) to recover function.
 
 ### EFI Modification
 

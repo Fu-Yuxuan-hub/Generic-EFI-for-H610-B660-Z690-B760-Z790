@@ -35,7 +35,7 @@
 #### 无线网卡
 
 - 建议使用博通无线网卡以获得 **更好** 的性能和使用原生的关于「苹果生态」的功能
-  >在 macOS Sonoma 中，Apple 已经删除了 *IO80211FamilyLegacy*，这导致博通无线网卡已经无法在 macOS Sonoma 中使用
+  >在 macOS Sonoma 中，Apple 已经删除了 *IO80211FamilyLegacy*，这导致博通无线网卡在 macOS Sonoma 中需要使用 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/pull/1077) 驱动。
 
 ### EFI 调整
 
