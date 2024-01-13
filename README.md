@@ -101,7 +101,7 @@ Important：
 | EHCI/XHCI Hand-off                | Enabled      |                                       |
 | DVMT Pre-Allocated(iGPU Memory)   | 64MB and above |                                 |
 
-
+Others:
 
 | items                        | Options | Comments                            |
 | ------------------------- | --------- | ------------------------------- |
@@ -112,7 +112,6 @@ Important：
 | iGPU                      | Disabled      | *Reserved Memory Region* will appear |
 | Execute Disable Bit       | Enabled          |                                 |
 | Legacy RTC Device         | Enabled          |                                 |
-| OS type                   | Windows 8.1/10 UEFI Mode |  Some motherboards before 200 series (not included) will recognize the system as Windows 7 in Other mode, disable some functions of UEFI and enable CSM        |
 
 ## Contribution
 

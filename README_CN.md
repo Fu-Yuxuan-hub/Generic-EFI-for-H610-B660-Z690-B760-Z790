@@ -39,8 +39,6 @@
 
 ### EFI 调整
 
-#### 下载 EFI
-
 - 请访问 [Releases](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/releases) 页面，**请勿** 克隆或者下载 「main 分支」
 
 #### ACPI
@@ -112,7 +110,6 @@
 | iGPU                      | 禁用      | 会出现 *Reserved Memory Region* |
 | Execute Disable Bit       | 启用          |                                 |
 | Legacy RTC Device         | 启用          |                                 |
-| OS type                   | Windows 8.1/10 UEFI Mode |  200 系（不包括）之前的部分主板在 Other 模式下会将系统认作是 Windows 7 从而禁用 UEFI 的某些功能并开启 CSM                    |
 
 ## 贡献 / Contribution
 
