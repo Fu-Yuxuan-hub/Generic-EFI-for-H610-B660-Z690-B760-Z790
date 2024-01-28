@@ -1,6 +1,21 @@
 Changelog
 ==================
 
+#### v0.9.5
+
+* Update OpenCore to **0.9.5**
+* Add support for **AMD Radeon RX 6700/6750**
+* Add _config_Raptor_Lake_Re.plist_ for Intel Core Processors (14th gen)
+
+#### v0.9.3
+
+* Add macOS Sonoma support
+* Improved `XhciPortLimit` quirk on macOS 11 to 14
+
+#### v0.9.2
+
+* Add *SSDT-6x50_FakeID.aml* for AMD Radeon RX 6x50
+
 #### v0.9.0
 
 * Add AppleIGC for Intel 2.5 GbE

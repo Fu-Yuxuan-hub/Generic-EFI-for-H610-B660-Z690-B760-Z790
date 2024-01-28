@@ -45,10 +45,10 @@
 
 ![截屏2023-04-05 20 09 13](https://user-images.githubusercontent.com/74492520/230076790-a296c140-1194-4011-b220-32b9745016ed.png)
 
-**注**：如果主机无法自动进入睡眠，请启用电能小憩
+**注**：如果主机无法自动进入睡眠，请启用 **电能小憩**
 
 
 ## 不能睡眠的主板
 
-* 最新BIOS的ASUS (ASUS PRIME B660 with BIOS 2212)
-* 一些拥有内置的Aquantia 10GbE网卡的主板 (比如 GIGABYTE Z790 AORUS MASTER)
+* 使用最新版本 BIOS 的 ASUS 主板。例如：ASUS PRIME B660 with BIOS 2212
+* 一些拥有板载 Aquantia 10GbE 网卡的主板。例如：GIGABYTE Z790 AORUS MASTER

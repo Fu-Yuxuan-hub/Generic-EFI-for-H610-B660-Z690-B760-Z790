@@ -50,5 +50,5 @@
 
 ## Boards that cannot sleep
 
-* ASUS with latest BIOS (ASUS PRIME B660 with BIOS 2212)
-* Some motherboards with built-in Aquantia 10GbE network card (such as GIGABYTE Z790 AORUS MASTER)
+* ASUS with latest BIOS version.
+* Some motherboards with built-in Aquantia 10GbE network card
