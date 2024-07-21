@@ -34,8 +34,8 @@
 
 #### 无线网卡
 
-- 建议使用博通无线网卡以获得 **更好** 的性能和使用原生的关于「苹果生态」的功能
-  >在 macOS Sonoma 中，Apple 已经删除了 *IO80211FamilyLegacy*，这导致博通无线网卡在 macOS Sonoma 中需要使用 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/pull/1077) 驱动。
+- 对于 macOS Ventura 及更早版本：建议使用博通无线网卡以获得 **更好** 的性能和使用原生的功能。
+- 对于 macOS Sonoma 及更新版本：建议使用 Intel 无线网卡 或 使用 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/pull/1077) 的博通无线网卡。
 
 ### EFI 调整
 
@@ -66,15 +66,6 @@
 #### AMD Radeon RX 6x50 XT
 
 * 启用 ACPI 文件夹下的 *SSDT-6x50_FakeID.aml* 
-
-#### 以太网
-
-| Device                 | VT-d      | OpenCore                                                     | NOTE                                                         |
-| ---------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| Intel-i225/226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | |
-| Intel-i225/226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | |
 
 ### BIOS设置 
 

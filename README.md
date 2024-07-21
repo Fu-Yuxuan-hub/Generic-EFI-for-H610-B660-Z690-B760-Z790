@@ -34,8 +34,8 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 #### Wireless Card
 
-- It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions about「Apple Ecology」
-  >In macOS Sonoma ，Apple has removed *IO80211FamilyLegacy*, so the Broadcom wireless card need [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/pull/1077) to recover function.
+- For macOS Ventura and before: It is recommended to use Broadcom wireless network card to obtain **Better** performance and use native functions.
+- For macOS Sonoma and later: It is recommended to use Intel wireless network card or use Broadcom wireless network with [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/pull/1077).
 
 ### EFI Modification
 
@@ -68,15 +68,6 @@ Your warranty is now void. Please do some research if you have any concerns befo
 #### AMD Radeon RX 6x50 XT
 
 * Enable *SSDT-6x50_FakeID.aml* in the ACPI folder
-
-#### Ethernet
-
-| Device                 | VT-d      | OpenCore                                                     | NOTE                                                         |
-| ---------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| AQC-107                | YES       | Enabled *ForceAquantiaEthernet*<br>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| AQC-113                | YES       | Enabled *ForceAquantiaEthernet*<br/>Disable *DisableIoMapper* | See: [Aquantia 10GbE](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/tree/main/Aquantia%2010GbE) |
-| Intel-i225/226-V **Way 1** | YES       | Disable *DisableIoMapper*                                    | |
-| Intel-i225/226-V **Way 2** | Unlimited | Enable *AppleIGC.kext*                                       | |
 
 ### BIOS Settings
 
