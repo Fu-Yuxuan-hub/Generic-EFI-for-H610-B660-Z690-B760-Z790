@@ -71,7 +71,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 
 ### BIOS Settings
 
-Important：
+Essential：
 
 | items                                | Options | Comments                                  |
 | --------------------------------- | --------- | ------------------------------------- |
@@ -102,6 +102,10 @@ Others:
 | Execute Disable Bit       | Enabled          |                                 |
 | Legacy RTC Device         | Enabled          |                                 |
 
+## About Intel Arrow Lake-S and 800-series motherboard
+
+Starting with the Intel W790 series motherboards, Intel has begun using the **ACPI 6.4** specification. However, due to Apple's transition to Apple Silicon in 2020, the AppleACPIPlatform only supports up to **ACPI 6.2A**. This has led to **ACPI Error** and **ACPI** initialization failure issues on the W790 and Z890 series motherboards during boot. I don't think the time it takes to solve this problem is proportional to the results. In the meantime, with most of the Z890 series motherboards offering Thunderbolt support and more Thunderbolt devices appear, the Windows has long since surpassed that of the feature-laden macOS.It is no longer recommended to run Hackintosh with Core Ultra Series 2 processors.  And if you do still want to use macOS, I think the recently released [Mac mini](https://www.apple.com/mac-mini/) is a better choice. The wheel of history is rolling forward, so let's make Hackintosh a part of the history.
+
 ## Contribution
 
 #### If you like this project, please consider supporting it via:
@@ -112,7 +116,7 @@ Others:
   * Also can [WeChat](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Donation/WeChat.JPG) or [Alipay](https://github.com/Fu-Yuxuan-hub/Generic-EFI-for-H610-B660-Z690-B760-Z790/blob/main/Donation/Alipay.JPG)
 
 * Opening up an issue if you encountered any problem or want to make suggestions.
-  > Attention：Please ask questions according to the predetermined template
+  > Attention：Please ask questions according to the predetermined template.
 
 ## Credits
 
