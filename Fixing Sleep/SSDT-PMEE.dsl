@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "YUXUAN", "PMEE", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "LYNX", "PMEE", 0x00000000)
 {
     External (_SB_.PC00.XHCI.PMEE, FieldUnitObj)
     External (XPTS,MethodObj)

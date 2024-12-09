@@ -15,6 +15,7 @@ Your warranty is now void. Please do some research if you have any concerns befo
 - [dortania Getting Started with ACPI](https://dortania.github.io/OpenCore-Post-Install/)
 - [daliansky/OC-little](https://github.com/daliansky/OC-little)
 - [OpenCore 简体中文参考手册 (非官方)](https://oc.skk.moe)
+- [Arrow Lake-S Support](https://www.tonymacx86.com/threads/intel-core-ultra-9-testing.330837/)
 
 ## Before Installation
 
@@ -104,7 +105,21 @@ Others:
 
 ## About Intel Arrow Lake-S and 800-series motherboard
 
-Starting with the Intel W790 series motherboards, Intel has begun using the **ACPI 6.4** specification. However, due to Apple's transition to Apple Silicon in 2020, the AppleACPIPlatform only supports up to **ACPI 6.2A**. This has led to **ACPI Error** and **ACPI** initialization failure issues on the W790 and Z890 series motherboards during boot. I don't think the time it takes to solve this problem is proportional to the results. In the meantime, with most of the Z890 series motherboards offering Thunderbolt support and more Thunderbolt devices appear, the Windows has long since surpassed that of the feature-laden macOS.It is no longer recommended to run Hackintosh with Core Ultra Series 2 processors.  And if you do still want to use macOS, I think the recently released [Mac mini](https://www.apple.com/mac-mini/) is a better choice. The wheel of history is rolling forward, so let's make Hackintosh a part of the history.
+From [vit9696](https://www.tonymacx86.com/threads/intel-core-ultra-9-testing.330837/post-2414232)
+
+macOS builds ACPI tree in the following order: firstly devices declared unconditionally, then devices declared conditionally (inside ifs). This applies both to Device (initial) declarations and Scope (extension) declarations. Device declarations must precede Scope declarations.
+
+What happens with Z890 ACPI is that while Scope declaration of _SB.PC02.RP01.PXSX succeeds Device declaration as normal, Scope declaration of _SB.PC02, which contains _SB.PC02.RP01.PXSX Device declaration, is conditional. This makes PXSX inaccessible from the ACPI interpreter and aborts DSDT loading.
+
+Removing the condition helps the problem.
+
+ACPI Patch:
+Code:
+Find:     A0 00 00 00 92 93 50 43 48 41 00
+Replace:  A3 A3 A3 A3 A3 A3 A3 A3 A3 A3 A3
+FindMask: FF 00 00 00 FF FF FF FF FF FF FF
+Count:    1
+TableSignature: DSDT
 
 ## Contribution
 
@@ -121,7 +136,9 @@ Starting with the Intel W790 series motherboards, Intel has begun using the **AC
 ## Credits
 
 * [acidanthera](https://github.com/acidanthera) for OpenCore.
-* Apple for macOS.
+* [Apple](https://www.apple.com) for macOS.
+* [Miracle-Sakuno](https://github.com/Miracle-Sakuno) for Readme.
+* [Lynx]() for ***SSDT-PMEE***
 
 ## Attention
 
